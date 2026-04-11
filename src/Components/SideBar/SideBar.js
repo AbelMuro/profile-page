@@ -2,7 +2,7 @@ import React from 'react';
 import * as styles from './styles.module.css';
 
 function SideBar() {
-    return (<aside> Hello sidebar</aside>)
+    return (<aside></aside>)
 }
 
 export default SideBar;

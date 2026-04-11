@@ -12,7 +12,7 @@ module.exports = {
     plugins: [                      
         new HtmlWebpackPlugin({             
             filename: 'index.html',           
-            template: './src/index.html'      
+            template: './public/index.html'      
         }),    
     ],
     devServer: {                             
@@ -27,7 +27,7 @@ module.exports = {
                 use: {
                     loader: 'babel-loader',  
                     options: {
-                        presets: ['@babel/preset-env', '@babel/preset-react'],
+                        presets: ['@babel/preset-env', '@babel/preset-react', '@babel/preset-typescript'],
                         plugins: [
                           [
                             'babel-plugin-root-import',
@@ -59,9 +59,20 @@ module.exports = {
                   ]             
             },
             {
+                test: /\.tsx?$/,
+                use: 'ts-loader',
+                exclude: /node_modules/,
+            },      
+            {
                 test: /\.(png|jpg|webp|mp4|wav|svg)$/,
                 type: 'asset/resource'                                              
             }
         ]
+    },
+    resolve: {
+        extensions: ['.tsx', '.ts', '.js'],
+        alias: {
+            '~' : path.resolve(__dirname, 'src')
+        }
     },
 }
