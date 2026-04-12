@@ -9,9 +9,13 @@ function useMediaQuery(initialQuery : string){
 
     useEffect(() => {
         const media = window.matchMedia(initialQuery);
-
+        setMatches(media.matches);
         media.addEventListener('change', handleMatches);
-    }, [initialQuery]);
+
+        return () => {
+            media.removeEventListener('change', handleMatches);
+        }
+    }, []);
 
     return [matches];
 }

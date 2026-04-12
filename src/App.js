@@ -1,18 +1,14 @@
 import React from 'react';
-import SideBar from './Components/SideBar';
-import NavigationBar from './Components/NavigationBar';
+import Profile from './Pages/Profile';
 import './global.css';
 
 /* 
-    this is where i left off, i am currently working on the MobileNavigationBar component
+    this is where i left off, i need to continue working on the MobileSideBar component
 */
 
 function App() {
     return(
-        <>
-            <NavigationBar/>
-            <SideBar/>
-        </>
+        <Profile/>
     )
 };
 
