@@ -13,36 +13,48 @@ body{
 }
 
 :root{
-    --preset-text-color: #7a0000;
-    --preset-text-color-hover: #ae0000;
-    --preset-text-color-active: #e70000;
+    --preset-text-color-black: #161616;
 
-    --preset-background-color: #7a0000;
-    --preset-background-color-hover: #ae0000;
-    --preset-background-color-active: #e70000;
+    --preset-text-color-red: #7a0000;
+    --preset-text-color-red-hover: #ae0000;
+    --preset-text-color-red-active: #e70000;
+
+    --preset-background-1-color: #7a0000;
+    --preset-background-1-color-hover: #ae0000;
+    --preset-background-1-color-active: #e70000;
+
+    --preset-background-2-color: #161616;
+    --preset-background-2-color-hover: #4c4c4c;
+    --preset-background-2-color-active: #686868;
 
     --preset-text-1-font-family: 'Lato';
-    --preset-text-1-font-size: 5rem;
+    --preset-text-1-font-size: 4.5rem;
     --preset-text-1-font-weight: 500;
-    --preset-text-1-line-height: 1.5rem;
+    --preset-text-1-line-height: 5rem;
     --preset-text-1-letter-spacing: 0px;
 
     --preset-text-2-font-family: 'Lato';
     --preset-text-2-font-size: 3rem;
     --preset-text-2-font-weight: 300;
-    --preset-text-2-line-height: 1.3rem;
+    --preset-text-2-line-height: 3.4rem;
     --preset-text-2-letter-spacing: 0px;
 
     --preset-text-3-font-family: 'Lato';
     --preset-text-3-font-size: 2.4rem;
     --preset-text-3-font-weight: 300;
-    --preset-text-3-line-height: 1rem;
+    --preset-text-3-line-height: 3rem;
     --preset-text-3-letter-spacing: 0px;
 
     --preset-text-4-font-family: 'Lato';
     --preset-text-4-font-size: 1.5rem;
     --preset-text-4-font-weight: 300;
-    --preset-text-4-line-height: 0.8rem;
+    --preset-text-4-line-height: 2rem;
     --preset-text-4-letter-spacing: 0px;
+
+    --preset-text-5-font-family: 'Lato';
+    --preset-text-5-font-size: 1rem;
+    --preset-text-5-font-weight: 300;
+    --preset-text-5-line-height: 1.4rem;
+    --preset-text-5-letter-spacing: 0px;
 
 }

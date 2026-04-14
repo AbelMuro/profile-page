@@ -22,7 +22,7 @@
 .nav_icon{
     width: 50px;
     height: 50px;
-    background-color: var(--preset-background-color);
+    background-color: var(--preset-background-1-color);
     mask-image: url('./icons/bars.svg');
     mask-size: 50px 50px;
     mask-position: center;
@@ -30,11 +30,11 @@
 }   
 
 .nav_button:hover > .nav_icon{
-    background-color: var(--preset-background-color-hover);
+    background-color: var(--preset-background-1-color-hover);
 }
 
 .nav_button:active > .nav_icon{
-    background-color: var(--preset-background-color-active);
+    background-color: var(--preset-background-1-color-active);
 }
 
 
@@ -58,7 +58,7 @@
     flex-direction: column;
     gap: 35px;
     background-color: white;
-    border-right: 3px solid var(--preset-background-color);
+    border-right: 3px solid var(--preset-background-1-color);
 }
 
 .nav_options > li:nth-of-type(1){
@@ -71,7 +71,7 @@
     text-align: left;
     background-color: transparent;
     border: none;
-    color: var(--preset-text-color);
+    color: var(--preset-text-color-red);
     font-family: var(--preset-text-4-font-family);
     font-size: var(--preset-text-4-font-size);
     font-weight: var(--preset-text-4-font-weight);
@@ -81,11 +81,11 @@
 }
 
 .nav_option:hover{
-    color: var(--preset-text-color-hover);
+    color: var(--preset-text-color-red-hover);
 }
 
 .nav_option:active{
-    color: var(--preset-text-color-active);
+    color: var(--preset-text-color-red-active);
 }
 
 .close{
@@ -102,7 +102,7 @@
 .close_icon{
     width: 40px;
     height: 40px;
-    background-color: var(--preset-background-color);
+    background-color: var(--preset-background-1-color);
     mask-image: url('./icons/close.svg');
     mask-position: center;
     mask-size: 40px 40px;
@@ -110,5 +110,5 @@
 }
 
 .close:active > .close_icon{
-    background-color: var(--preset-background-color-active);
+    background-color: var(--preset-background-1-color-active);
 }

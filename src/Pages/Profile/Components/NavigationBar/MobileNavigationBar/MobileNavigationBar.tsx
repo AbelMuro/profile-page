@@ -20,14 +20,14 @@ function MobileNavigationBar(){
                 {open &&
                     <motion.section 
                         initial={{opacity: 0}}
-                        animate={{opacity: 1, transition: {when: 'beforeChildren'}}}
-                        exit={{opacity: 0, transition: {when: 'afterChildren'}}}
+                        animate={{opacity: 1, transition: {duration: 0.3}}}
+                        exit={{opacity: 0, transition: {duration: 0.5, delay: 0.5}}}
                         className={styles.overlay}>
                             <motion.ul 
                                 initial={{clipPath: 'circle(0px at 10px 10px)'}}
                                 animate={{clipPath: 'circle(100%)'}}
                                 exit={{clipPath: 'circle(0px at 10px 10px)'}}
-                                transition={{duration: 0.4}}
+                                transition={{duration: 0.7}}
                                 className={styles.nav_options}>
                                 <li>
                                     <button className={styles.close} onClick={handleOpen}>

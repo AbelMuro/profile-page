@@ -1,5 +1,5 @@
 .sidebar{
-    width: 300px;
+    width: 200px;
     height: calc(100vh - 60px);
     padding: 35px;
     grid-row: 2/3;
@@ -22,7 +22,7 @@
     text-align: left;
     border: none;
     background-color: transparent;
-    color: var(--preset-text-color);
+    color: var(--preset-text-color-red);
     font-family: var(--preset-text-4-font-family);
     font-size: var(--preset-text-4-font-size);
     font-weight: var(--preset-text-4-font-weight);
@@ -32,5 +32,5 @@
 }
 
 .sidebar_option:hover{
-    color: var(--preset-text-color-hover);
+    color: var(--preset-text-color-red-hover);
 }
