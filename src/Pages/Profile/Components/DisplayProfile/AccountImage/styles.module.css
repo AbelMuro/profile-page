@@ -1,0 +1,14 @@
+.account_image{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    align-self: center;
+    justify-self: center;
+    cursor: pointer;
+}
+
+.input{
+    display: none;
+}

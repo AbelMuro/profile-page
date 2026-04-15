@@ -1,0 +1,21 @@
+.account_location{
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    align-self: end;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: var(--preset-text-5-font-family);
+    font-size: var(--preset-text-5-font-size);
+    font-weight: var(--preset-text-5-font-weight);
+    line-height: var(--preset-text-5-line-height);
+    letter-spacing: var(--preset-text-5-letter-spacing);
+}
+
+.account_location > img{
+    width: 40px;
+    object-fit: contain;
+}

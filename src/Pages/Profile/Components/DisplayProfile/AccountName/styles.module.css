@@ -1,0 +1,13 @@
+.account_name{
+    color: var(--preset-text-color-black);
+    font-family: var(--preset-text-2-font-family);
+    font-size: var(--preset-text-2-font-size);
+    font-weight: var(--preset-text-2-font-weight);
+    line-height: var(--preset-text-2-line-height);
+    letter-spacing: var(--preset-text-2-letter-spacing);
+    margin: 0px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: start;
+    align-self: end;
+}

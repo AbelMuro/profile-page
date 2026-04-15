@@ -1,34 +1,4 @@
-.account{
-    width: 100%;
-    height: calc(100vh - 60px);
-    padding: 15px;
-    grid-column: 2/3;
-    grid-row: 2/3;
-    display: flex;
-    flex-direction: column;
-    gap: 15px
-}
-
-.account_header{
-    width: 100%;
-    height: 400px;
-    border-radius: 25px;
-    border: 2px solid var(--preset-background-1-color);
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto auto auto auto;
-    column-gap: 25px;
-    row-gap: 15px;
-    padding: 0px 0px 0px 35px;
-}
-
-
-
-
-
-
-
-.account_role, .account_exp{
+.account_exp{
     width: 200px;
     height: 70px;
     display: flex;
@@ -47,7 +17,6 @@
     justify-self: end;
 }
 
-.account_role > h2,
 .account_exp > h2{
     margin: 0px;
     color: var(--preset-text-color-red);
@@ -58,7 +27,6 @@
     letter-spacing: var(--preset-text-5-letter-spacing);
 }
 
-.account_role > p,
 .account_exp > p{
     white-space: nowrap;
     margin: 0px;
