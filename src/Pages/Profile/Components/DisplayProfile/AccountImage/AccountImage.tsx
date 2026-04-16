@@ -1,4 +1,5 @@
 import React, {useState, useRef, ChangeEvent} from 'react';
+import {motion} from 'framer-motion';
 import icons from './icons';
 import * as styles from './styles.module.css';
 
@@ -18,8 +19,8 @@ function AccountImage() {
 
     return (
         <>
-            <img className={styles.account_image} src={file} onClick={handleOpen}/>
-            <input type='file' ref={inputRef} className={styles.input} onChange={handleFile}/>
+            <motion.img key='account_image' layout className={styles.account_image} src={file} onClick={handleOpen}/>
+            <motion.input type='file' layout ref={inputRef} className={styles.input} onChange={handleFile}/>
         </>
         
     )

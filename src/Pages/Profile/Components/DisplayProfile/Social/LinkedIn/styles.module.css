@@ -1,0 +1,47 @@
+.account_social{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-self: start;
+    gap: 5px;
+}
+
+.account_social_button{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 2px solid var(--preset-background-1-color);
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account_social_button:hover{
+    border-color: var(--preset-background-1-color-hover);
+}
+
+.account_social_button:active{
+    border-color: var(--preset-background-1-color-active);
+}
+
+.account_social_button > img{
+    width: 30px;
+    height: 30px;
+    background-color: var(--preset-background-2-color);
+    flex-shrink: 0; 
+    mask-position: center;
+    mask-size: 20px 20px;
+    mask-repeat: no-repeat;
+    mask-image: url('./icons/linkedin.svg');
+}
+
+.account_social_button:hover > img{
+    background-color: var(--preset-background-2-color-hover);
+}
+
+.account_social_button:active > img{
+    background-color: var(--preset-background-2-color-active);
+}
+

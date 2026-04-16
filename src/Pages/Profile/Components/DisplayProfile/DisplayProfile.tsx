@@ -1,4 +1,5 @@
 import React from 'react';
+import { LayoutGroup } from 'framer-motion';
 import AccountImage from './AccountImage';
 import AccountName from './AccountName';
 import Location from './Location';
@@ -11,12 +12,14 @@ function DisplayProfile() {
     return(
         <article className={styles.account}>
             <header className={styles.account_header}>
-                <AccountImage/>
-                <AccountName/>
-                <Location/>
-                <Social/>   
-                <Role/>      
-                <Experience/>   
+                <LayoutGroup>
+                    <AccountImage/>
+                    <AccountName/>
+                    <Location/>
+                    <Social/>   
+                    <Role/>      
+                    <Experience/>                      
+                </LayoutGroup>
             </header>
         </article>
     )

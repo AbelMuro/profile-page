@@ -1,22 +1,19 @@
 import React from 'react';
+import Email from './Email';
+import Facebook from './Facebook';
+import Github from './Github';
+import LinkedIn from './LinkedIn';
+import {motion} from 'framer-motion';
 import icons from './icons';
 import * as styles from './styles.module.css';
 
 function Social() {
     return (
-        <div className={styles.account_social}>
-            <button className={styles.account_social_button}>
-                <img />
-            </button>
-            <button className={styles.account_social_button}>
-                <img />
-            </button>
-            <button className={styles.account_social_button}>
-                <img />
-            </button>
-            <button className={styles.account_social_button}>
-                <img />
-            </button>
+        <motion.div layout className={styles.account_social}>
+            <Email/>
+            <Facebook/>
+            <Github/>
+            <LinkedIn/>
             <button className={styles.account_message}>
                 <img src={icons['message']}/>
                 Message
@@ -25,7 +22,7 @@ function Social() {
                 <img src={icons['share']}/>
                 Share
             </button>
-        </div>  
+        </motion.div>  
     )
 }
 
