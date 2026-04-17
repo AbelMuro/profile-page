@@ -35,7 +35,10 @@ function AccountName() {
     }, [open])
 
     useEffect(() => {
-        document.addEventListener('keydown', handleKey);
+        if(open)
+            document.addEventListener('keydown', handleKey);
+        else
+            document.removeEventListener('keydown', handleKey);
 
         return () => {
             document.removeEventListener('keydown', handleKey);

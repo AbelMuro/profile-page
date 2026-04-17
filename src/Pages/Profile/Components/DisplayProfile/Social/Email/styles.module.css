@@ -1,6 +1,7 @@
 .account_social_button{
     width: 30px;
     height: 30px;
+    padding: 0px;
     border-radius: 100%;
     border: 2px solid var(--preset-background-1-color);
     background-color: transparent;
@@ -19,8 +20,8 @@
 }
 
 .account_social_button > img{
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     background-color: var(--preset-background-2-color);
     flex-shrink: 0; 
     mask-image: url('./icons/email.svg');
@@ -35,4 +36,22 @@
 
 .account_social_button:active > img{
     background-color: var(--preset-background-2-color-active);
+}
+
+.account_input{
+    width: 75px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 3px solid var(--preset-text-color-black);
+    color: var(--preset-text-color-black);
+    font-family: var(--preset-text-5-font-family);
+    font-size: var(--preset-text-5-font-size);
+    font-weight: var(--preset-text-5-font-weight);
+    line-height: var(--preset-text-5-line-height);
+    letter-spacing: var(--preset-text-5-letter-spacing);
+}
+
+.account_input:focus{
+    outline: none;
+    border-color: var(--preset-text-color-red);
 }

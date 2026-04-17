@@ -45,3 +45,20 @@
     background-color: var(--preset-background-2-color-active);
 }
 
+.account_input{
+    width: 75px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 3px solid var(--preset-text-color-black);
+    color: var(--preset-text-color-black);
+    font-family: var(--preset-text-5-font-family);
+    font-size: var(--preset-text-5-font-size);
+    font-weight: var(--preset-text-5-font-weight);
+    line-height: var(--preset-text-5-line-height);
+    letter-spacing: var(--preset-text-5-letter-spacing);
+}
+
+.account_input:focus{
+    outline: none;
+    border-color: var(--preset-text-color-red);
+}
