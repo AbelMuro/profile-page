@@ -6,6 +6,7 @@ import Location from './Location';
 import Social from './Social';
 import Role from './Role';
 import Experience from './Experience';
+import DetailCarousel from './DetailCarousel';
 import * as styles from './styles.module.css';
 
 function DisplayProfile() {
@@ -21,6 +22,7 @@ function DisplayProfile() {
                     <Experience/>                      
                 </LayoutGroup>
             </header>
+            <DetailCarousel/>
         </article>
     )
 }

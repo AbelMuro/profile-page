@@ -12,63 +12,28 @@
 
 .account_header{
     width: 100%;
-    height: 400px;
+    height: auto;
     border-radius: 25px;
     border: 2px solid var(--preset-background-1-color);
     display: grid;
     grid-template-columns: auto 1fr;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: 120px 120px auto auto;
     column-gap: 25px;
     row-gap: 15px;
-    padding: 0px 15px 0px 35px;
+    padding: 15px 15px 15px 35px;
 }
 
 
-
-
-
-
-
-.account_role, .account_exp{
-    width: 200px;
-    height: 70px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.account_role{
-    grid-row: 3/5;
-    grid-column: 2/3;
-}
-
-.account_exp{
-    grid-row: 3/5;
-    grid-column: 2/3;
-    justify-self: end;
-}
-
-.account_role > h2,
-.account_exp > h2{
-    margin: 0px;
-    color: var(--preset-text-color-red);
-    font-family: var(--preset-text-5-font-family);
-    font-size: var(--preset-text-5-font-size);
-    font-weight: var(--preset-text-5-font-weight);
-    line-height: var(--preset-text-5-line-height);
-    letter-spacing: var(--preset-text-5-letter-spacing);
-}
-
-.account_role > p,
-.account_exp > p{
-    white-space: nowrap;
-    margin: 0px;
-    color: var(--preset-text-color-black);
-    font-family: var(--preset-text-4-font-family);
-    font-size: var(--preset-text-4-font-size);
-    font-weight: var(--preset-text-4-font-weight);
-    line-height: var(--preset-text-4-line-height);
-    letter-spacing: var(--preset-text-4-letter-spacing);
+@media(max-width: 925px){
+    .account{
+        width: 100%;
+    }   
 }
 
 
+@media(max-width: 675px){
+    .account_header{
+        grid-template-columns: 1fr;
+        grid-template-rows: initial;
+    }
+}

@@ -12,3 +12,9 @@
 .input{
     display: none;
 }
+
+@media(max-width: 675px){
+    .account_image{
+        grid-row: 1/2;
+    }
+}

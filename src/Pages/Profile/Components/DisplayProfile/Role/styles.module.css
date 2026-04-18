@@ -1,25 +1,14 @@
-
-.account_role, .account_exp{
+.account_role{
     width: 200px;
     height: 70px;
     display: flex;
     flex-direction: column;
     gap: 15px;
+    grid-row: 3/4;
+    grid-column: 2/3;  
 }
 
-.account_role{
-    grid-row: 3/5;
-    grid-column: 2/3;
-}
-
-.account_exp{
-    grid-row: 3/5;
-    grid-column: 2/3;
-    justify-self: end;
-}
-
-.account_role > h2,
-.account_exp > h2{
+.account_role > h2{
     margin: 0px;
     color: var(--preset-text-color-red);
     font-family: var(--preset-text-5-font-family);
@@ -29,8 +18,7 @@
     letter-spacing: var(--preset-text-5-letter-spacing);
 }
 
-.account_role > p,
-.account_exp > p{
+.account_role > p{
     white-space: nowrap;
     margin: 0px;
     color: var(--preset-text-color-black);
@@ -58,4 +46,18 @@
 
 .account_input:focus{
     outline: none;
+}
+
+@media(max-width: 770px){
+    .account_role{
+        margin-top: 15px;
+        grid-column: 1/2;
+    }
+}
+
+@media(max-width: 675px){
+    .account_role{
+        justify-self: center;
+        grid-row: 5/6;
+    }
 }

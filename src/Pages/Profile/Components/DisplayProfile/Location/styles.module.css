@@ -28,3 +28,9 @@
 .account_input:focus{
     border-color: var(--preset-text-color-red);
 }
+
+@media(max-width: 675px){
+    .account_location{
+        grid-row: 2/3;
+    }
+}

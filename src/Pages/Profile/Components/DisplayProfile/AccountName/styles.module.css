@@ -23,3 +23,11 @@
     outline: none;
     border-color: var(--preset-text-color-red);
 }
+
+@media(max-width: 675px){
+    .account_name, .account_input{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        justify-self: center;
+    }
+}
